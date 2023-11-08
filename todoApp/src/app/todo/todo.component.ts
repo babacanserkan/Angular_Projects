@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 import { Model } from '../model';
 import { TodoItem } from '../todoitem';
 
@@ -27,7 +27,7 @@ export class TodoComponent {
       let items = this.getItemsFromLS();
       items.push(data);
       localStorage.setItem('items', JSON.stringify(items));
-      this.inputText = '';
+      this.inputText = ''; // boş bir metin giriyoruzs
     } else {
       alert('bilgi giriniz');
     }
