@@ -5,7 +5,14 @@
   "projects": {
     "todoApp": {
       "projectType": "application",
-      "schematics": {},
+      "schematics": {
+        "@schematics/angular:application": {
+          "strict": true
+        }
+      },
+      "i18n": {
+        "sourceLocale": "tr"
+      },
       "root": "",
       "sourceRoot": "src",
       "prefix": "app",
