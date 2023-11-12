@@ -11,6 +11,8 @@ import { FooterComponent } from './footer/footer.component';
 import { SummaryPipe } from './pipes/summary.pipe';
 import { FormsModule } from '@angular/forms';
 import { MovieFilterPipe } from './pipes/movie-filter.pipe';
+import { AlerifyService } from './services/alertify.service';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -29,8 +31,9 @@ import { MovieFilterPipe } from './pipes/movie-filter.pipe';
     // modules - moduller
     BrowserModule,
     FormsModule,
+    HttpClientModule,
   ],
-  providers: [], // services
+  providers: [AlerifyService], // services
   bootstrap: [AppComponent], // starter components - başlatılcak olan component
 })
 export class AppModule {}

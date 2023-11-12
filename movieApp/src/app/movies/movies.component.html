@@ -1,7 +1,7 @@
 <div *ngIf="movies.length > 0; else no_movies">
   <h1>{{ title }}</h1>
   <div class="alert alert-warning" *ngIf="movies.length > 0">
-    {{ movies.length }} film listelendi.
+    {{ FilteredMovies.length }} film listelendi.
   </div>
 
   <div class="mb-3">
@@ -9,6 +9,7 @@
       type="text"
       class="form-control"
       [(ngModel)]="filterText"
+      (ngModelChange)="onInputChange()"
       placeholder="Search..."
     />
     <small class="text-muted" *ngIf="filterText"
@@ -24,7 +25,7 @@
 </ng-template>
 
 <ng-template #movieList1>
-  <div class="card mb-3" *ngFor="let item of movies | movieFilter : filterText">
+  <div class="card mb-3" *ngFor="let item of FilteredMovies">
     <div class="row">
       <div class="col-md-3">
         <img
@@ -41,9 +42,17 @@
           </p>
           <p>
             <span class="text-danger">Çıkış tarihi:</span>
-            {{ item.datePublished | date : "dd/MM/y" }}
+            <!-- {{ item.datePublished | date : "dd/MM/y" }} -->
           </p>
-          <button class="btn btn-sm btn-outline-primary">Details</button>
+          <div>
+            <button class="btn btn-sm btn-outline-primary">Details</button>
+            <button
+              (click)="addToList($event, item)"
+              class="btn btn-sm btn-primary ms-2"
+            >
+              Listete Ekle
+            </button>
+          </div>
         </div>
       </div>
     </div>

@@ -1,0 +1,41 @@
+{
+  "movies": [
+    {
+      "id": 1,
+      "title": "Film 1",
+      "description": "Lorem ipsum dolor sit amet to shazam consectetur adipisicing elit. Maiores modi perspiciatis neque laborum nulla. ",
+      "Image": "1.jpeg"
+    },
+    {
+      "id": 2,
+      "title": "Film 2",
+      "description": "Lorem ipsum dolor sit amet to shazam consectetur adipisicing elit. Maiores modi perspiciatis neque laborum nulla. ",
+      "Image": "2.jpeg"
+    },
+    {
+      "id": 3,
+      "title": "Film 3",
+      "description": "Lorem ipsum dolor sit amet to shazam consectetur adipisicing elit. Maiores modi perspiciatis neque laborum nulla. ",
+      "Image": "3.jpeg"
+    },
+    {
+      "id": 4,
+      "title": "Film 4",
+      "description": "Lorem ipsum dolor sit amet to shazam consectetur adipisicing elit. Maiores modi perspiciatis neque laborum nulla. ",
+      "Image": "4.jpeg"
+    },
+    {
+      "id": 5,
+      "title": "Film 5",
+      "description": "Lorem ipsum dolor sit amet to shazam consectetur adipisicing elit. Maiores modi perspiciatis neque laborum nulla. ",
+      "Image": "5.jpeg"
+    }
+  ],
+  "categories": [
+    { "id": 1, "name": "macera" },
+    { "id": 2, "name": "romantik" },
+    { "id": 3, "name": "komedi" },
+    { "id": 4, "name": "bilimkurgu" },
+    { "id": 5, "name": "savaş" }
+  ]
+}
